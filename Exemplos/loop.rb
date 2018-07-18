@@ -1,13 +1,11 @@
-3.times {
-  |i|
-  puts "Execução número #{i}" if i%2 == 0
-}
+3.times do |i|
+  puts "Execução número #{i}" if i.even?
+end
 
-nomes = ["Daniel", "Rafael", "Gabriela", "Kérolyn"]
+nomes = ['Daniel Bilar', 'Rafael Bilar', 'Gabriela Bilar', 'Kérolyn Silvério']
 
-nomes.sort.each {
-  |nome|
-  puts "Nome: #{ nome } - Tamanho: #{ nome.length }"
-}
+nomes.sort.each do |nome|
+  puts "Nome: #{nome} - Tamanho: #{nome.length}"
+end
 
 puts nomes.reverse
