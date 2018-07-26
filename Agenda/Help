@@ -1,0 +1,1 @@
+rails generate scaffold Evento nome:string local:string inicio:datetime termino:datetime
